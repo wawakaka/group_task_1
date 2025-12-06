@@ -9,6 +9,17 @@ class Admin extends User {
         System.out.println("Admin managing the library system.");
     }
 
+    public Book findBookByTitle(Book[] books, String title) {
+        for (Book book : books) {
+            if (book != null && book.getTitle().equalsIgnoreCase(title)) {
+                System.out.println("Book found!");
+                return book;
+            }
+        }
+        System.out.println("Book not found!");
+        return null;
+    }
+
     public void addBook(Book[] books, Book newBook) {
         for (int i = 0; i < books.length; i++) {
             if (books[i] == null) {

@@ -32,6 +32,9 @@ public class Main {
         System.out.println("### member returning books");
         member.returnBook(book0);
 
+        System.out.println("### admin trying to find book by title");
+        admin.findBookByTitle(books,"java for dummies");
+
         System.out.println("### list books");
         for (Book book : books) {
             System.out.println(book);
