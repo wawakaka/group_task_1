@@ -42,6 +42,8 @@ Book borrowed successfully!
 Book borrowed successfully!
 ### member returning books
 Book returned successfully!
+### admin trying to find book by title
+Book found!
 ### list books
 Self-Esteem For Dummies by S. Renee Smith and Vivian Harte, available=true
 java for dummies by Barry A. Burd, available=true
@@ -55,5 +57,4 @@ null
 null
 
 Process finished with exit code 0
-
 ```
