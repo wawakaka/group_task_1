@@ -50,4 +50,17 @@ class Admin extends User {
             System.out.println("Book not found!");
         }
     }
+
+    public void showAvailableBooks(Book[] books) {
+        boolean found = false;
+        for (Book book : books) {
+            if (book != null && book.isAvailable()) {
+                System.out.println("- " + book.toString());
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("No available books at the moment!");
+        }
+    }
 }

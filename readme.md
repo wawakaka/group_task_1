@@ -43,10 +43,24 @@ Book added successfully!
 
 Book removed successfully!
 
+### member borrowing books
+
+Book borrowed successfully!
+Book borrowed successfully!
+
+### member returning books
+
+Book returned successfully!
+
 ### admin trying to find book by title
 
 Book found!
 
-Process finished with exit code 0
+### admin checking available books
 
+- Self-Esteem For Dummies by S. Renee Smith and Vivian Harte, available=true
+- java for dummies by Barry A. Burd, available=true
+- JavaScript for dummies by Doug Lowe, available=true
+
+Process finished with exit code 0
 ```
