@@ -36,4 +36,9 @@ public class Book {
     public void setUnavailable() {
         available = false;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s by %s, available=%s", title, author, available);
+    }
 }

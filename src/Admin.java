@@ -1,5 +1,3 @@
-import java.util.List;
-
 class Admin extends User {
 
     public Admin(String name) {
@@ -12,7 +10,14 @@ class Admin extends User {
     }
 
     public void addBook(Book[] books, Book newBook) {
-        System.out.println("Book added successfully!");
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] == null) {
+                books[i] = newBook;
+                System.out.println("Book added successfully!");
+                return;
+            }
+        }
+        System.out.println("No space available to add book!");
     }
 
     public void removeBook(Book[] books, String title) {
