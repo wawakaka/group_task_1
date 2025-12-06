@@ -12,32 +12,27 @@ public class Main {
         Admin admin = new Admin("Strygwyr the Bloodseeker");
         Member member = new Member("Kardel");
 
-        System.out.println("### call interact()");
+        System.out.println("\n### call interact()\n");
         admin.interact();
         member.interact();
-        System.out.println("### admin adding books");
+        System.out.println("\n### admin adding books\n");
         admin.addBook(books, book0);
         admin.addBook(books, book1);
         admin.addBook(books, book2);
         admin.addBook(books, book3);
         admin.addBook(books, book4);
 
-        System.out.println("### admin removing books");
+        System.out.println("\n### admin removing books\n");
         admin.removeBook(books, "SQL for dummies");
 
-        System.out.println("### member borrowing books");
+        System.out.println("\n### member borrowing books\n");
         member.borrowBook(book0);
         member.borrowBook(book2);
 
-        System.out.println("### member returning books");
+        System.out.println("\n### member returning books\n");
         member.returnBook(book0);
 
-        System.out.println("### admin trying to find book by title");
+        System.out.println("\n### admin trying to find book by title\n");
         admin.findBookByTitle(books,"java for dummies");
-
-        System.out.println("### list books");
-        for (Book book : books) {
-            System.out.println(book);
-        }
     }
 }
