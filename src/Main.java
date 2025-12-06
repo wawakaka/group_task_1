@@ -25,13 +25,6 @@ public class Main {
         System.out.println("\n### admin removing books\n");
         admin.removeBook(books, "SQL for dummies");
 
-        System.out.println("\n### member borrowing books\n");
-        member.borrowBook(book0);
-        member.borrowBook(book2);
-
-        System.out.println("\n### member returning books\n");
-        member.returnBook(book0);
-
         System.out.println("\n### admin trying to find book by title\n");
         admin.findBookByTitle(books,"java for dummies");
     }

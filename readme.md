@@ -43,15 +43,6 @@ Book added successfully!
 
 Book removed successfully!
 
-### member borrowing books
-
-Book borrowed successfully!
-Book borrowed successfully!
-
-### member returning books
-
-Book returned successfully!
-
 ### admin trying to find book by title
 
 Book found!
